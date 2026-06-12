@@ -61,3 +61,4 @@ my-projects/deep-research-langgraph/
 my-projects/trip-planner-langgraph/
 agent/
 **/.env
+*.db
