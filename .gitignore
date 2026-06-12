@@ -57,3 +57,7 @@ context.md
 # Original hello-agents (locked by git, copy exists in my-projects/)
 hello-agents/
 司令部.md
+my-projects/deep-research-langgraph/
+my-projects/trip-planner-langgraph/
+agent/
+**/.env
