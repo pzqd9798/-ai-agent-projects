@@ -1,0 +1,13 @@
+# Core
+anthropic>=0.39.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Browser automation (optional for demo mode)
+# browser-use[core]>=0.13.0
+
+# Rich terminal output
+rich>=13.0.0
+
+# HTTP client
+httpx>=0.27.0

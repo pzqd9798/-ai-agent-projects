@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Session data
+.sessions/
+sessions/
+
+# Output
+output/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dependencies
+node_modules/
+
+# Third-party repos (have their own git)
+harness/
+browser-use/
+agents-towards-production/
+Agent-Learning-Hub/
+projectladder/
+skill/
+
+# Personal files
+彭子琪-互联网.pdf
+web_agent.py
+context.md
