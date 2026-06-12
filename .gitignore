@@ -62,3 +62,4 @@ my-projects/trip-planner-langgraph/
 agent/
 **/.env
 *.db
+evaluation-reports/
