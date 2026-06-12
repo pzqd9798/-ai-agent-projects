@@ -37,21 +37,36 @@
 
 ## 快速开始
 
+### CLI 模式
+
 ```bash
 cd AutoGen_software_team
 pip install -r requirements.txt
+cp .env.example .env  # 填入 LLM_API_KEY
 
-# 配置 .env
-echo 'LLM_API_KEY=sk-xxx' > .env
-echo 'LLM_MODEL_ID=deepseek-chat' >> .env
-echo 'LLM_BASE_URL=https://api.deepseek.com' >> .env
-
-# 运行
 python run.py                          # 默认: 比特币追踪器
 python run.py --task todo-api          # Todo API 服务
 python run.py --task "开发一个..."      # 自定义任务
 python run.py --list                   # 列出预设任务
 ```
+
+### 前后端分离模式
+
+```bash
+# 终端1: 启动 FastAPI 后端
+python backend.py
+# → http://localhost:8001
+
+# 终端2: 启动 Streamlit 前端
+streamlit run frontend.py
+# → http://localhost:8501
+```
+
+前端界面支持：
+- 预设任务下拉选择
+- 自定义任务输入
+- 实时流式展示团队对话（按角色颜色区分）
+- 任务状态追踪
 
 ## Agent 角色设计
 
