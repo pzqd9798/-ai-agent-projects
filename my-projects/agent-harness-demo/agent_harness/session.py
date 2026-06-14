@@ -1,16 +1,16 @@
 """
-Session Recorder — captures everything that happens in an agent run.
+会话录制器 — 捕获 Agent 运行中发生的一切.
 
-Records:
-    - All messages (user + assistant + tool results)
-    - Tool calls with inputs/outputs
-    - Token usage per step
-    - Timing information
+记录:
+    - 所有消息 (用户 + 助手 + 工具结果)
+    - 工具调用及其输入/输出
+    - 每步 token 用量
+    - 时间信息
 
-Supports:
-    - Real-time stats via :stats command
-    - Auto-save to transcripts/ on exit
-    - Manual save via :save command
+支持:
+    - 通过 :stats 命令实时查看统计
+    - 退出时自动保存到 transcripts/
+    - 通过 :save 命令手动保存
 """
 
 import json

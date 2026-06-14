@@ -1,4 +1,4 @@
-"""Utility for collecting and exposing tool call events."""
+"""工具调用事件收集与暴露."""
 
 from __future__ import annotations
 

@@ -1,20 +1,20 @@
 """
-Core Agent Loop — the heart of the harness.
+核心 Agent 循环 — 整个脚手架的心脏.
 
-Pattern (from learn-claude-code s01/s02):
+模式 (来自 claw0 s01/s02):
     while stop_reason == "tool_use":
         response = LLM(messages, tools)
-        execute tools via dispatch map
-        append tool results to messages
-        loop
+        通过分发表执行工具
+        将工具结果追加到 messages
+        循环
 
-This loop is intentionally simple — all complexity is in the layers around it:
-    tools.py   → what the agent can DO
-    logger.py  → how we SEE what's happening
-    session.py → how we REMEMBER what happened
+这个循环刻意保持简单 — 所有复杂性都在外围层:
+    tools.py   → Agent 能做什么
+    logger.py  → 我们如何看到发生了什么
+    session.py → 我们如何记住发生了什么
 
-The loop itself doesn't change when you add tools, hooks, or permissions.
-That's the key architectural insight.
+添加工具、钩子或权限时, 循环本身不需要改变.
+这就是关键的架构洞察.
 """
 
 import time

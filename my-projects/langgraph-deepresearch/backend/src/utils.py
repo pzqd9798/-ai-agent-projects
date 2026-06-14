@@ -1,4 +1,4 @@
-"""Utility helpers shared across deep researcher services."""
+"""深度研究服务共享的工具函数."""
 
 from __future__ import annotations
 

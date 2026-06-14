@@ -1,4 +1,4 @@
-"""Search dispatch helpers (replaces hello-agents SearchTool with direct API calls)."""
+"""搜索调度辅助 — 统一的搜索 API 调用入口 (替代 hello-agents SearchTool)."""
 
 from __future__ import annotations
 

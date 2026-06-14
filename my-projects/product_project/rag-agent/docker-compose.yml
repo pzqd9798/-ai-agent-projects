@@ -1,0 +1,98 @@
+version: "3.9"
+
+# ============================================================
+# RAG Agent Pro — Docker Compose 部署
+#
+# 基础模式 (API + Redis):
+#     docker-compose up -d
+#
+# 全栈模式 (API + Redis + Worker + Frontend):
+#     docker-compose --profile full up -d
+# ============================================================
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: rag-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL:-}
+      - MODEL_ID=${MODEL_ID:-claude-sonnet-4-6}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-}
+      - EMBEDDING_API_KEY=${EMBEDDING_API_KEY:-}
+      - EMBEDDING_BASE_URL=${EMBEDDING_BASE_URL:-}
+      - JWT_SECRET=${JWT_SECRET:-dev-secret}
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=sqlite+aiosqlite:///data/rag_agent.db
+      - DEBUG=${DEBUG:-false}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    container_name: rag-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: rag-worker
+    command: arq app.worker.tasks.WorkerSettings
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL:-}
+      - MODEL_ID=${MODEL_ID:-claude-sonnet-4-6}
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=sqlite+aiosqlite:///data/rag_agent.db
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    profiles:
+      - full
+
+  frontend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: rag-frontend
+    command: streamlit run frontend/app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE=http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+    profiles:
+      - full
+
+volumes:
+  redis_data:

@@ -31,7 +31,11 @@ def extract_static(url: str, timeout: int = 15) -> PageContent:
 
     resp = httpx.get(
         url, timeout=timeout, follow_redirects=True,
-        headers={"User-Agent": "WebAgent/1.0 (AI-powered web scraper)"},
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        },
     )
     resp.raise_for_status()
 

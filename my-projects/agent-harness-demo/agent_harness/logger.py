@@ -1,17 +1,17 @@
 """
-Debug Logger — 5-level logging system for agent harness debugging.
+调试日志器 — 5 级日志系统, 用于 Agent 脚手架调试.
 
-Levels (from most to least verbose):
-    TRACE  — raw API request/response, full tool outputs
-    DEBUG  — tool call summary, token usage per step
-    INFO   — loop iteration markers, step summaries
-    WARN   — recoverable errors, retries, fallback paths
-    ERROR  — fatal errors that stop the agent
+级别 (从最详细到最简洁):
+    TRACE  — 原始 API 请求/响应, 完整工具输出
+    DEBUG  — 工具调用摘要, 每步 token 用量
+    INFO   — 循环迭代标记, 步骤摘要
+    WARN   — 可恢复错误, 重试, 降级路径
+    ERROR  — 致命错误, 终止 Agent
 
-Usage:
-    logger = DebugLogger(level="INFO")   # default for normal use
-    logger = DebugLogger(level="DEBUG")  # --debug flag
-    logger = DebugLogger(level="TRACE")  # --trace flag
+用法:
+    logger = DebugLogger(level="INFO")   # 默认, 日常使用
+    logger = DebugLogger(level="DEBUG")  # --debug 标志
+    logger = DebugLogger(level="TRACE")  # --trace 标志
 """
 
 import sys

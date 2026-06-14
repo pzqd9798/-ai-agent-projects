@@ -1,7 +1,7 @@
-"""Search backend wrappers (replaces hello-agents SearchTool).
+"""搜索后端封装 (替代 hello-agents SearchTool).
 
-Supports Tavily, DuckDuckGo, and extensible backends.
-Returns a normalised dict with ``results``, ``backend``, ``answer``, ``notices``.
+支持 Tavily、DuckDuckGo 及可扩展后端.
+返回统一的 dict 结构: results, backend, answer, notices.
 """
 
 from __future__ import annotations

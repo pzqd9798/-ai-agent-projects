@@ -1,2 +1,2 @@
-"""Domain services for the deep researcher workflow."""
+"""深度研究员工作流的领域服务层."""
 

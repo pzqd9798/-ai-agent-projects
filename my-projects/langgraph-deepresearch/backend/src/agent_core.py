@@ -1,6 +1,6 @@
-"""Simple agent with text-based tool calling, replacing hello-agents ToolAwareSimpleAgent.
+"""基于文本工具调用的简易 Agent, 替代 hello-agents 的 ToolAwareSimpleAgent.
 
-Uses LangChain ChatOpenAI under the hood. Supports both sync and async modes.
+底层使用 LangChain ChatOpenAI, 支持同步和异步模式.
 """
 
 from __future__ import annotations

@@ -1,13 +1,13 @@
 # Agent Harness Demo
-# A debuggable agent loop — Agent = Model + Harness
+# 可调试的 Agent 循环 — Agent = Model + Harness
 #
-# Usage:
+# 用法:
 #     python run.py
 #     python run.py --debug
 #     python run.py --trace
 #
-# Architecture:
-#     run.py → core.py (agent loop)
-#               ├── tools.py   (tool definitions + dispatch map)
-#               ├── logger.py  (5-level debug logging)
-#               └── session.py (session recording + stats)
+# 架构:
+#     run.py → core.py (Agent 循环)
+#               ├── tools.py   (工具定义 + 分发表)
+#               ├── logger.py  (5 级调试日志)
+#               └── session.py (会话录制 + 统计)

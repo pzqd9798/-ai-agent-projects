@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
 """
-Agent Harness Demo — Interactive CLI
-=====================================
+Agent Harness Demo — 交互式命令行
+==================================
 
-A debuggable agent harness to demonstrate the Agent = Model + Harness pattern.
+可调试的 Agent 脚手架, 演示 Agent = Model + Harness 模式.
 
-Usage:
-    python run.py                      # Normal mode (INFO level)
-    python run.py --debug              # Show tool call details
-    python run.py --trace              # Show everything including raw API
-    python run.py --max-steps 5        # Limit loop iterations
+用法:
+    python run.py                      # 普通模式 (INFO 级别)
+    python run.py --debug              # 显示工具调用详情
+    python run.py --trace              # 显示一切, 包括原始 API 请求
+    python run.py --max-steps 5        # 限制循环次数
 
-Commands (type during session):
-    q, exit, quit    — Exit the session (auto-saves transcript)
-    :stats            — Show session statistics
-    :save [filename]  — Save transcript manually
-    :debug, :trace    — Change log level at runtime
+会话内命令:
+    q, exit, quit    — 退出会话 (自动保存转录)
+    :stats            — 显示会话统计
+    :save [filename]  — 手动保存转录
+    :debug, :trace    — 运行时切换日志级别
 
-Examples:
+示例:
     python run.py --debug
-    s01 >> Create a file hello.py that prints "Hello, Agent!"
-    s01 >> What files are in the current directory?
-    s01 >> Read the contents of hello.py
+    s01 >> 创建一个 hello.py 文件, 打印 "Hello, Agent!"
+    s01 >> 当前目录有哪些文件?
+    s01 >> 读取 hello.py 的内容
     s01 >> q
 
 Setup:

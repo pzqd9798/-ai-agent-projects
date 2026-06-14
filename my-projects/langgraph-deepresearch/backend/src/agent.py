@@ -1,6 +1,6 @@
-"""Orchestrator coordinating the deep research workflow.
+"""深度研究编排器 — 将研究主题拆解为 TODO 任务, 多轮搜索, 最终生成报告.
 
-Rewritten to use LangChain + asyncio instead of hello-agents.
+基于 LangChain + asyncio 实现, 替代 hello-agents 框架.
 """
 
 from __future__ import annotations

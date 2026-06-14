@@ -1,4 +1,4 @@
-"""Service responsible for converting the research topic into actionable tasks."""
+"""研究规划服务 — 将研究主题转化为可执行的 TODO 任务列表."""
 
 from __future__ import annotations
 

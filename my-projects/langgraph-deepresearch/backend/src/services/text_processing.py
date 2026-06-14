@@ -1,4 +1,4 @@
-"""Utility helpers for normalizing agent generated text."""
+"""文本处理工具 — 规范化 Agent 生成的文本, 移除工具调用标记."""
 
 from __future__ import annotations
 

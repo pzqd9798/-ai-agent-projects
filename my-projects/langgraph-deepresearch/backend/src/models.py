@@ -1,4 +1,4 @@
-"""State models used by the deep research workflow."""
+"""深度研究工作流使用的状态数据模型."""
 
 import operator
 from dataclasses import dataclass, field

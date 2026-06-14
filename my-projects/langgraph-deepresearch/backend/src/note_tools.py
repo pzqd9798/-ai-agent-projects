@@ -1,7 +1,7 @@
-"""File-based note operations (replaces hello-agents NoteTool).
+"""基于文件的笔记操作 (替代 hello-agents NoteTool).
 
-Provides create / read / update note actions backed by markdown files.
-Compatible with the [TOOL_CALL:note:{...}] text-based calling convention.
+提供创建/读取/更新笔记功能, 以 Markdown 文件存储.
+兼容 [TOOL_CALL:note:{...}] 文本调用约定.
 """
 
 from __future__ import annotations

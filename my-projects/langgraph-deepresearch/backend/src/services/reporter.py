@@ -1,4 +1,4 @@
-"""Service that consolidates task results into the final report."""
+"""报告生成服务 — 将所有任务结果整合为最终研究报告."""
 
 from __future__ import annotations
 

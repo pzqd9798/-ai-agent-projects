@@ -1,0 +1,80 @@
+# ============================================================
+# Coding Agent Pro — Docker Compose 一键部署
+#
+# 用法:
+#     docker-compose up -d              # 启动所有服务
+#     docker-compose logs -f api        # 查看 API 日志
+#     docker-compose down               # 停止
+# ============================================================
+
+version: "3.8"
+
+services:
+  # ── FastAPI 后端 ──────────────────────────────────
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./workspace:/app/workspace
+      - ./team:/app/team:ro      # AutoGen 团队模块 (只读)
+    depends_on:
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  # ── Redis (任务队列) ──────────────────────────────
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # ── arq Worker (可选, 不启动也能用同步模式) ────────
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: arq app.worker.tasks.WorkerSettings
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./workspace:/app/workspace
+      - ./team:/app/team:ro
+    depends_on:
+      redis:
+        condition: service_started
+    restart: unless-stopped
+    profiles:
+      - full    # 只在 docker-compose --profile full up 时启动
+
+  # ── Streamlit 前端 (可选) ─────────────────────────
+  frontend:
+    image: python:3.11-slim
+    working_dir: /app
+    command: >
+      sh -c "pip install streamlit requests && streamlit run frontend/app.py --server.port 8501 --server.address 0.0.0.0"
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE=http://api:8000
+    volumes:
+      - ./frontend:/app/frontend
+    depends_on:
+      - api
+    restart: unless-stopped
+    profiles:
+      - full
+
+volumes:
+  redis_data:

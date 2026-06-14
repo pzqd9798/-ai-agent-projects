@@ -1,4 +1,4 @@
-"""Helpers for coordinating note tool usage instructions."""
+"""协调笔记工具使用指令的辅助函数."""
 
 from __future__ import annotations
 

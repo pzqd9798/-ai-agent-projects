@@ -1,13 +1,13 @@
 """
-Tool Definitions & Dispatch Map — the agent's "hands."
+工具定义与分发表 — Agent 的"双手".
 
-Pattern: Dispatch Map (from learn-claude-code s02)
-    - TOOLS: list of tool schemas sent to the LLM
-    - TOOL_HANDLERS: dict mapping tool name → handler function
-    - Adding a new tool = append to TOOLS + add entry to TOOL_HANDLERS
-    - The agent loop NEVER changes when tools are added (Open/Closed Principle)
+模式: 分发表 (来自 claw0 s02)
+    - TOOLS: 发送给 LLM 的工具 schema 数组
+    - TOOL_HANDLERS: 工具名 → 处理函数的映射字典
+    - 添加新工具 = 追加 TOOLS 条目 + 添加 TOOL_HANDLERS 条目
+    - Agent 循环在添加工具时从不改变 (开闭原则)
 
-Each handler returns: {"ok": bool, "output": str}
+每个处理函数返回: {"ok": bool, "output": str}
 """
 
 import os

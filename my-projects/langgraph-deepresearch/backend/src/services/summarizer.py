@@ -1,4 +1,4 @@
-"""Task summarization utilities."""
+"""任务总结工具 — 同步与流式任务摘要生成."""
 
 from __future__ import annotations
 
