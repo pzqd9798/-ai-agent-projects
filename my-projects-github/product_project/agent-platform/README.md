@@ -18,7 +18,7 @@
 
 ```bash
 git clone https://github.com/pzqd9798/-ai-agent-projects.git
-cd -ai-agent-projects/my-projects/agent-platform
+cd -ai-agent-projects/my-projects-github/product_project/agent-platform
 cp .env.example .env
 # 编辑 .env 填入 ANTHROPIC_API_KEY
 docker-compose up -d
