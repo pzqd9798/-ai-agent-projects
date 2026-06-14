@@ -1,0 +1,20 @@
+# Core
+anthropic>=0.39.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Document parsing
+pypdf>=4.0.0
+markdown-it-py>=3.0.0
+
+# Embedding (using Anthropic or local)
+httpx>=0.27.0
+
+# Vector store (optional: Redis for production)
+redis>=5.0.0
+
+# UI
+streamlit>=1.35.0
+
+# Rich output
+rich>=13.0.0

@@ -1,0 +1,21 @@
+# LangGraph 版旅行规划助手 依赖
+# =================================
+
+# --- LangGraph 核心 ---
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+
+# --- Web 框架 ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# --- HTTP & 工具 ---
+requests>=2.32.0
+python-dotenv>=1.0.0
+
+# --- 可选：与前端样式兼容 ---
+# (前端单独安装，不在后端依赖中)

@@ -1,0 +1,308 @@
+{
+  "notes": [
+    {
+      "id": "note_20260609_210609_0",
+      "title": "任务 1: 行业需求概览",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_1"
+      ],
+      "created_at": "2026-06-09T21:06:09.418745"
+    },
+    {
+      "id": "note_20260609_210609_1",
+      "title": "任务 2: 招聘企业与岗位分布",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_2"
+      ],
+      "created_at": "2026-06-09T21:06:09.425933"
+    },
+    {
+      "id": "note_20260609_210609_2",
+      "title": "任务 3: 技能与资格要求",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_3"
+      ],
+      "created_at": "2026-06-09T21:06:09.428130"
+    },
+    {
+      "id": "note_20260609_210609_3",
+      "title": "任务 4: 薪资与待遇水平",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-09T21:06:09.429805"
+    },
+    {
+      "id": "note_20260609_210609_4",
+      "title": "任务 5: 求职与面试经验",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_5"
+      ],
+      "created_at": "2026-06-09T21:06:09.435067"
+    },
+    {
+      "id": "note_20260609_210807_5",
+      "title": "任务 3: 薪资与福利调研",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_3"
+      ],
+      "created_at": "2026-06-09T21:08:07.878868"
+    },
+    {
+      "id": "note_20260609_210810_6",
+      "title": "任务 2: 岗位技能要求",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_2"
+      ],
+      "created_at": "2026-06-09T21:08:10.327876"
+    },
+    {
+      "id": "note_20260609_210812_7",
+      "title": "任务 5: 代表性企业动态",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_5"
+      ],
+      "created_at": "2026-06-09T21:08:12.978761"
+    },
+    {
+      "id": "note_20260609_210842_8",
+      "title": "任务 1: 行业需求概览",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_1"
+      ],
+      "created_at": "2026-06-09T21:08:42.165549"
+    },
+    {
+      "id": "note_20260609_210845_9",
+      "title": "任务 4: 竞争态势分析",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-09T21:08:45.154179"
+    },
+    {
+      "id": "note_20260609_210845_10",
+      "title": "任务 4: 竞争态势分析",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-09T21:08:45.162643"
+    },
+    {
+      "id": "note_20260609_210959_11",
+      "title": "研究报告：2026年agent本科实习招聘行情",
+      "type": "conclusion",
+      "tags": [
+        "deep_research",
+        "report"
+      ],
+      "created_at": "2026-06-09T21:09:59.200344"
+    },
+    {
+      "id": "note_20260610_105923_12",
+      "title": "市场供需概况",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_1"
+      ],
+      "created_at": "2026-06-10T10:59:23.067557"
+    },
+    {
+      "id": "note_20260610_105923_13",
+      "title": "任务 2: 岗位技能要求",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_2"
+      ],
+      "created_at": "2026-06-10T10:59:23.091610"
+    },
+    {
+      "id": "note_20260610_105923_14",
+      "title": "薪资与竞争分析",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_3"
+      ],
+      "created_at": "2026-06-10T10:59:23.120135"
+    },
+    {
+      "id": "note_20260610_105923_15",
+      "title": "任务 4: 趋势与新兴方向",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-10T10:59:23.126460"
+    },
+    {
+      "id": "note_20260610_105923_16",
+      "title": "任务 5: 渠道与准备资源",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_5"
+      ],
+      "created_at": "2026-06-10T10:59:23.130594"
+    },
+    {
+      "id": "note_20260610_110205_17",
+      "title": "研究报告：2026年agent本科实习招聘行情",
+      "type": "conclusion",
+      "tags": [
+        "deep_research",
+        "report"
+      ],
+      "created_at": "2026-06-10T11:02:05.049707"
+    },
+    {
+      "id": "note_20260610_111614_18",
+      "title": "招聘流程现状梳理",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_1"
+      ],
+      "created_at": "2026-06-10T11:16:14.567891"
+    },
+    {
+      "id": "note_20260610_111614_19",
+      "title": "AI Agent技术应用拆解",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_2"
+      ],
+      "created_at": "2026-06-10T11:16:14.596060"
+    },
+    {
+      "id": "note_20260610_111614_20",
+      "title": "任务 3: 案例与最佳实践",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_3"
+      ],
+      "created_at": "2026-06-10T11:16:14.610156"
+    },
+    {
+      "id": "note_20260610_111614_21",
+      "title": "2026趋势、风险与合规",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-10T11:16:14.645671"
+    },
+    {
+      "id": "note_20260610_111614_22",
+      "title": "本科实习生场景适配性",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_5"
+      ],
+      "created_at": "2026-06-10T11:16:14.654966"
+    },
+    {
+      "id": "note_20260610_111928_23",
+      "title": "研究报告：2026年agent本科实习招聘流程",
+      "type": "conclusion",
+      "tags": [
+        "deep_research",
+        "report"
+      ],
+      "created_at": "2026-06-10T11:19:28.625761"
+    },
+    {
+      "id": "note_20260610_112140_24",
+      "title": "任务1: 市场与岗位概况",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_1"
+      ],
+      "created_at": "2026-06-10T11:21:40.925279"
+    },
+    {
+      "id": "note_20260610_112140_25",
+      "title": "任务2: 核心技术栈",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_2"
+      ],
+      "created_at": "2026-06-10T11:21:40.953096"
+    },
+    {
+      "id": "note_20260610_112140_26",
+      "title": "任务 3: 项目作品集设计",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_3"
+      ],
+      "created_at": "2026-06-10T11:21:40.965336"
+    },
+    {
+      "id": "note_20260610_112140_27",
+      "title": "任务4: 简历与面试技巧",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_4"
+      ],
+      "created_at": "2026-06-10T11:21:40.983087"
+    },
+    {
+      "id": "note_20260610_112140_28",
+      "title": "任务5: 上岸案例与经验",
+      "type": "task_state",
+      "tags": [
+        "deep_research",
+        "task_5"
+      ],
+      "created_at": "2026-06-10T11:21:40.998088"
+    },
+    {
+      "id": "note_20260610_112508_29",
+      "title": "研究报告：给本科生的2026年agent实习上岸教程",
+      "type": "conclusion",
+      "tags": [
+        "deep_research",
+        "report"
+      ],
+      "created_at": "2026-06-10T11:25:08.223735"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-06-09T21:05:39.130688",
+    "total_notes": 30
+  }
+}

@@ -1,0 +1,34 @@
+# ============================================================
+# AutoGen Software Team — 生产级依赖
+# ============================================================
+
+# Web 框架
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+
+# 认证
+pyjwt>=2.10.0
+
+# 数据库
+aiosqlite>=0.20.0
+
+# 异步任务队列
+arq>=0.26.0
+redis>=5.0.0
+
+# AutoGen 核心 (保留原有团队协作)
+autogen-agentchat>=0.7.0
+autogen-ext[openai]>=0.7.0
+
+# 代码沙箱
+docker>=7.0.0
+
+# 可观测性
+structlog>=24.0.0
+
+# 配置
+python-dotenv>=1.0.0
+pydantic-settings>=2.0.0
+
+# 工具
+httpx>=0.28.0
